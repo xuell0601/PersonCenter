@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:background="@drawable/commom_top"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/h_back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/h_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:background="@drawable/my_user_default" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/h_back"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/user_line"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_line"
+                android:text="张三"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/user_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/user_line"
+                android:text="182****5882"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp"
+       android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <com.example.utils.nav_bar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lishi"
+            my:icon="@mipmap/product_part2_icon"
+            my:hint="历史记录"
+            android:background="@drawable/selector"
+            >
+        </com.example.utils.nav_bar>
+        <!---->
+        <com.example.utils.nav_bar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shoucang"
+            my:icon="@mipmap/my_asset_manage"
+            my:hint="收藏"
+            android:background="@drawable/selector"
+            >
+    </com.example.utils.nav_bar>
+        <com.example.utils.nav_bar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/version"
+            my:icon="@mipmap/product_info_icon"
+            my:hint="版本更新"
+            android:background="@drawable/selector"
+            >
+        </com.example.utils.nav_bar>
+        <com.example.utils.nav_bar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/about"
+            my:icon="@mipmap/my_reward_manage"
+            my:hint="关于"
+            android:background="@drawable/selector"
+            >
+        </com.example.utils.nav_bar>
+
+    </LinearLayout>
+</LinearLayout>
